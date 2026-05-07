@@ -1,0 +1,207 @@
+
+
+
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone Gadget Store</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+        header { background: #1a1a1a; color: #fff; padding: 30px; text-align: center; }
+        nav { background: #2c3e50; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: #ecf0f1; margin: 0 15px; text-decoration: none; font-weight: 600; font-size: 14px; text-transform: uppercase; }
+        nav a:hover { color: #3498db; }
+        
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        .category-header { border-left: 6px solid #3498db; padding-left: 15px; margin: 40px 0 20px; color: #2c3e50; }
+        
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .product-card { background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; text-align: center; transition: 0.3s; }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-card img { width: 100%; height: 200px; object-fit: contain; border-bottom: 1px solid #eee; margin-bottom: 15px; }
+        
+        .price { color: #e67e22; font-size: 1.25rem; font-weight: bold; margin: 10px 0; }
+        .availability { color: #27ae60; font-weight: 600; font-size: 0.9rem; }
+        .out-of-stock { color: #c0392b; }
+        .offer-badge { background: #e74c3c; color: white; padding: 5px 10px; border-radius: 5px; font-size: 12px; display: inline-block; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TechZone Gadget Store</h1>
+</header>
+
+<nav>
+    <a href="#newarrivals">New Arrivals</a>
+    <a href="#smartphones">Smartphones</a>
+    <a href="#laptops">Laptops</a>
+    <a href="#audio">Audio</a>
+    <a href="#wearables">Wearables</a>
+    <a href="#gaming">Gaming</a>
+</nav>
+
+<div class="container">
+
+
+    <h2 id="newarrivals" class="category-header">New Arrivals</h2> 
+    <div class="product-grid">               
+        <div class="product-card">
+            <img src="iphone15.jpg" alt="iPhone 15 Pro">
+            <h3>iPhone 15 Pro Max</h3>
+            <p>Titanium body and A17 Pro chip.</p>
+            <p class="price">Rs. 450,000</p>
+            <p class="availability">In Stock</p>
+        </div>        
+        <div class="product-card">
+            <img src="s22.jpg" alt="Samsung S22">
+            <h3>Samsung Galaxy S22 Ultra</h3>
+            <p>Ultimate AI photography and performance.</p>
+            <p class="price">Rs. 200,000</p>
+            <p class="availability">In Stock</p>
+        </div>        
+        <div class="product-card">
+            <img src="asusi5.jpg" alt="Asus I5">
+            <h3>Asus I5</h3>
+            <p>Ultimate AI photography and performance.</p>
+            <p class="price">Rs. 310,000</p>
+            <p class="availability">In Stock</p>
+        </div>  
+</div>
+
+              
+    <h2 id="smartphones" class="category-header">Smartphones</h2>
+<div class="product-grid">
+        <div class="product-card">
+            <img src="s24.jpg" alt="Samsung S24">
+            <h3>Samsung Galaxy S24 Ultra</h3>
+            <p>Ultimate AI photography and performance.</p>
+            <p class="price">Rs. 410,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+        <div class="product-card">
+            <img src="pixel8.jpg" alt="Pixel 8">
+            <h3>Google Pixel 8 Pro</h3>
+            <p>Pure Android experience with best AI tools.</p>
+            <p class="price">Rs. 280,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+        <div class="product-card">
+            <img src="nothing.jpg" alt="Nothing Phone 2">
+            <h3>Nothing Phone (2)</h3>
+            <p>Unique transparent design and Glyph interface.</p>
+            <p class="price">Rs. 195,000</p>
+            <p class="availability">Low Stock</p>
+        </div>
+    </div>
+
+    <h2 id="laptops" class="category-header">Laptops</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="macbook.jpg" alt="MacBook">
+            <h3>MacBook Air M3 (2024)</h3>
+            <p>Ultra-thin and powerful Apple Silicon.</p>
+            <p class="price">Rs. 395,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+        <div class="product-card">
+            <img src="dell.jpg" alt="Dell XPS">
+            <h3>Dell XPS 13 Plus</h3>
+            <p>Premium Windows experience with OLED display.</p>
+            <p class="price">Rs. 320,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+        <div class="product-card">
+            <img src="rog.jpg" alt="ASUS ROG">
+            <h3>ASUS ROG Zephyrus G14</h3>
+            <p>Top-tier portable gaming performance.</p>
+            <p class="price">Rs. 450,000</p>
+            <p class="availability">Out of Stock</p>
+        </div>
+    </div>
+
+    <h2 id="audio" class="category-header">Audio & Headphones</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="sony.jpg" alt="Sony XM5">
+            <h3>Sony WH-1000XM5</h3>
+            <p>Industry-leading noise cancelling headphones.</p>
+            <p class="price">Rs. 115,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+        <div class="product-card">
+            <img src="airpods.jpg" alt="AirPods">
+            <h3>Apple AirPods Pro (2nd Gen)</h3>
+            <p>Adaptive audio and MagSafe charging.</p>
+            <p class="price">Rs. 75,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+        <div class="product-card">
+            <img src="bose.jpg" alt="Bose">
+            <h3>Bose QuietComfort Ultra</h3>
+            <p>Immersive sound and supreme comfort.</p>
+            <p class="price">Rs. 125,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+    </div>
+
+    <h2 id="wearables" class="category-header">Smartwatches / Wearables</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="watch9.jpg" alt="Apple Watch">
+            <h3>Apple Watch Series 9</h3>
+            <p>Advanced health monitoring and GPS.</p>
+            <p class="price">Rs. 145,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+        <div class="product-card">
+            <img src="galaxywatch.jpg" alt="Galaxy Watch">
+            <h3>Samsung Galaxy Watch 6</h3>
+            <p>Sleek design with holistic wellness tracking.</p>
+            <p class="price">Rs. 85,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+        <div class="product-card">
+            <img src="garmin.jpg" alt="Garmin">
+            <h3>Garmin Fenix 7 Pro</h3>
+            <p>Ultimate multi-sport GPS smartwatch.</p>
+            <p class="price">Rs. 210,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+    </div>
+
+    <h2 id="gaming" class="category-header">Gaming Accessories</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="ps5.jpg" alt="PS5 Controller">
+            <h3>DualSense™ Wireless Controller</h3>
+            <p>Haptic feedback for immersive gaming.</p>
+            <p class="price">Rs. 22,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+        <div class="product-card">
+            <img src="razer.jpg" alt="Razer Mouse">
+            <h3>Razer DeathAdder V3 Pro</h3>
+            <p>Ultra-lightweight wireless gaming mouse.</p>
+            <p class="price">Rs. 35,000</p>
+            <p class="availability">In Stock</p>
+        </div>
+        <div class="product-card">
+            <img src="keybd.jpg" alt="Logitech Keyboard">
+            <h3>Logitech G Pro X Mechanical</h3>
+            <p>Pro-grade performance with swappable switches.</p>
+            <p class="price">Rs. 45,000</p>
+            <p class="availability">Low Stock</p>
+        </div>
+    </div>
+
+</div>
+
+<footer style="background: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+    <p>&copy; 2026 TechZone Gadget Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
